@@ -23,35 +23,10 @@ namespace ServiceNowWebService
             return "Hello World";
         }
 
-        //[WebMethod]
-        //public ServiceNowReference.getRecordsResponseGetRecordsResult[] getRecords()
-        //{
-           
-        //    // GET RECORDS
-        //    ServiceNowReference.ServiceNowSoapClient client = createClient();
-        //    ServiceNowReference.getRecords records = new ServiceNowReference.getRecords();
-        //    ServiceNowReference.getRecordsResponse recordsResponse = new ServiceNowReference.getRecordsResponse();
-
-        //    try
-        //    {     
-        //        ServiceNowReference.getRecordsResponseGetRecordsResult[] response = client.getRecords(records);
-        //        return response;
-        //    }
-        //    catch (System.Exception ex)
-        //    {
-        //        // "ERROR: " + ex.Message;
-        //        return null;
-        //    }
-        //}
-
-        //private ServiceNowReference.ServiceNowSoapClient createClient()
-        //{
-        //    // CREATE CLIENT AND AUTHENTICATE
-        //    ServiceNowReference.ServiceNowSoapClient client = new ServiceNowReference.ServiceNowSoapClient();
-        //    Credentials cred = new Credentials();
-        //    client.ClientCredentials.UserName.UserName = cred.getUserName();
-        //    client.ClientCredentials.UserName.Password = cred.getPassword();
-        //    return client;
-        //}
+        [WebMethod]
+        public int add(int x, int y)
+        {
+            return x + y;
+        }
     }
 }
